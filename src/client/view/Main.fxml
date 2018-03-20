@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Home"/>
+                <Menu mnemonicParsing="false" text="User">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Log In"/>
+                        <MenuItem mnemonicParsing="false" text="Register"/>
+                        <MenuItem mnemonicParsing="false" text="User Info"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button layoutX="246.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0"
+                text="Browse"/>
+    </children>
+</AnchorPane>

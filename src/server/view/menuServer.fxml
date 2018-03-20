@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<MenuBar prefHeight="20.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.controller.MenuController">
+    <menus>
+        <Menu fx:id="home" mnemonicParsing="false" text="Home">
+            <items>
+                <MenuItem fx:id="homescreen" mnemonicParsing="false" onAction="#changeServerMenu" text="Home Screen"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Server Log">
+            <items>
+                <MenuItem fx:id="serverLog" mnemonicParsing="false" onAction="#changeServerMenu" text="Server Log"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Users Management">
+            <items>
+                <MenuItem fx:id="usersManag" mnemonicParsing="false" onAction="#changeServerMenu"
+                          text="Users Management"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

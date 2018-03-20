@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.controller.MovieInfoController">
+    <children>
+        <Label fx:id="titleLabel" layoutX="363.0" layoutY="49.0" maxWidth="600.0" text="MovieName">
+            <font>
+                <Font size="40.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="moviePosterImageView" fitHeight="480.0" fitWidth="320.0" layoutX="14.0" layoutY="14.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Label fx:id="yearLabel" layoutX="366.0" layoutY="114.0" text="2017">
+            <font>
+                <Font size="35.0"/>
+            </font>
+        </Label>
+        <Label fx:id="genreLabel" layoutX="363.0" layoutY="165.0" text="Genre">
+            <font>
+                <Font size="25.0"/>
+            </font>
+        </Label>
+        <Label fx:id="imbdLabel" layoutX="363.0" layoutY="215.0" text="imbdRating">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label fx:id="sepflixLabel" layoutX="522.0" layoutY="215.0" text="sepflixRating">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="793.0" layoutY="407.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/logo.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="addToListButton" layoutX="14.0" layoutY="503.0" mnemonicParsing="false" onAction="#addToMyList"
+                prefHeight="35.0" prefWidth="100.0" text="Add to MyList" AnchorPane.bottomAnchor="42.0"/>
+        <Button fx:id="rateButton" layoutX="174.0" layoutY="503.0" mnemonicParsing="false" onAction="#rate"
+                prefHeight="35.0" prefWidth="100.0" text="Rate" AnchorPane.bottomAnchor="42.0"/>
+        <Text fx:id="overviewText" layoutX="363.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="OverView"
+              wrappingWidth="600.13671875">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Button fx:id="trailerButton" layoutX="500.0" layoutY="127.0" mnemonicParsing="false" onAction="#playTrailer"
+                text="Watch Trailer"/>
+        <ListView fx:id="comentList" layoutX="365.0" layoutY="375.0" prefHeight="163.0" prefWidth="428.0"/>
+        <TextField fx:id="rateField" layoutX="296.0" layoutY="508.0" prefHeight="25.0" prefWidth="38.0"
+                   promptText="10.0"/>
+        <Button fx:id="commentButton" layoutX="843.0" layoutY="527.0" mnemonicParsing="false" onAction="#comment"
+                prefHeight="35.0" prefWidth="100.0" text="Comment"/>
+        <TextField fx:id="commentField" layoutX="368.0" layoutY="544.0" prefHeight="25.0" prefWidth="428.0"/>
+    </children>
+</AnchorPane>

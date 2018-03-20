@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="server.controller.Controller">
+    <children>
+        <Label fx:id="labelStartingServer" layoutX="24.0" layoutY="75.0" text="Server running:">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="233.0" fitWidth="466.0" layoutX="500.0" layoutY="174.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/logo.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="labelClients" layoutX="24.0" layoutY="168.0" text="Clients: ">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label fx:id="labelIpAddress" layoutX="24.0" layoutY="268.0" text="Ip address:">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label fx:id="labelNoClients" layoutX="179.0" layoutY="168.0" text="0">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <Label fx:id="labelYesNo" layoutX="232.0" layoutY="75.0" text="Yes/No">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Label>
+        <ListView fx:id="listView" layoutX="187.0" layoutY="275.0" prefHeight="167.0" prefWidth="143.0"/>
+    </children>
+</AnchorPane>

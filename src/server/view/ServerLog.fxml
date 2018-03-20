@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="server.controller.ControllerServerLog">
+    <children>
+        <ImageView fitHeight="155.0" fitWidth="376.0" layoutX="319.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/logo.png"/>
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutX="20.0" layoutY="155.0" prefHeight="339.0" prefWidth="960.0">
+            <columns>
+                <TableColumn fx:id="ipAddress" prefWidth="268.0" text="Ip address"/>
+                <TableColumn fx:id="logIn" prefWidth="150.0" text="Logged in"/>
+                <TableColumn fx:id="action" minWidth="0.0" prefWidth="270.0" text="Action"/>
+                <TableColumn fx:id="time" minWidth="0.0" prefWidth="270.0" text="Time"/>
+            </columns>
+        </TableView>
+        <Button fx:id="saveLog" layoutX="474.0" layoutY="514.0" mnemonicParsing="false" onAction="#saveLog"
+                text="Save Log"/>
+    </children>
+</AnchorPane>

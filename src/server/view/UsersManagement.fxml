@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="server.controller.ControllerUsersManagement">
+    <children>
+        <ImageView fitHeight="155.0" fitWidth="376.0" layoutX="346.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/logo.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="buttonRemove" layoutX="430.0" layoutY="504.0" mnemonicParsing="false" onAction="#removeUser"
+                prefHeight="39.0" prefWidth="141.0" text="Remove User"/>
+        <TableView fx:id="table" layoutX="21.0" layoutY="155.0" prefHeight="326.0" prefWidth="960.0"
+                   AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="19.0"
+                   AnchorPane.topAnchor="155.0">
+            <columns>
+                <TableColumn fx:id="username" minWidth="318.0" prefWidth="318.0" text="Username"/>
+                <TableColumn fx:id="firstName" minWidth="320.0" prefWidth="320.0" text="First Name"/>
+                <TableColumn fx:id="lastName" minWidth="320.0" prefWidth="320.0" text="Last Name"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

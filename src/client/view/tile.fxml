@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0"
+            prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.controller.TileController">
+    <children>
+        <ImageView fitHeight="480.0" fitWidth="320.0" onMouseClicked="#showMovieInfoMouse" pickOnBounds="true"
+                   preserveRatio="true" AnchorPane.leftAnchor="0.0"/>
+        <Label alignment="CENTER" layoutX="6.0" layoutY="480.0" maxWidth="310.0" prefWidth="310.0" text="MovieName"
+               textAlignment="CENTER" AnchorPane.leftAnchor="6.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showMovieInfo" text="More Information"/>
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Label>
+        <Label layoutX="146.0" layoutY="506.0" text="Year" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="146.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="idLabel" layoutX="6.0" layoutY="269.0" visible="false"/>
+    </children>
+</AnchorPane>

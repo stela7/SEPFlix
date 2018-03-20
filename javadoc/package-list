@@ -1,0 +1,8 @@
+client
+client.controller
+client.domain.mediator
+server
+server.controller
+server.controller.connectionSocket
+server.domain.mediator
+server.domain.model
